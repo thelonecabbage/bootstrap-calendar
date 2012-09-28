@@ -30,29 +30,29 @@
 
     // Create the defaults once
         // Create the defaults once
-    var getMonth = {
-        gregorian: function (month, year, lang) {
+    // var getMonth = {
+    //     gregorian: function (month, year, lang) {
             
-            var months {
-                en: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
-            };
-            var days =  [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
-            var isLeapYear = function (year) {
-                return (((year % 4 === 0) && (year % 100 !== 0)) || (year % 400 === 0))
-            };
-            var ret = {};
+    //         var months {
+    //             en: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
+    //         };
+    //         var days =  [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+    //         var isLeapYear = function (year) {
+    //             return (((year % 4 === 0) && (year % 100 !== 0)) || (year % 400 === 0))
+    //         };
+    //         var ret = {};
 
-            month = month || 0;
-            lang = lang || 'en';
+    //         month = month || 0;
+    //         lang = lang || 'en';
 
-            ret.name = months[lang][month];
-            ret.days = days[month];
-            if (isLeapYear(year)) {
-                ret.days = 29;
-            }
-            return ret;
-        }
-    }
+    //         ret.name = months[lang][month];
+    //         ret.days = days[month];
+    //         if (isLeapYear(year)) {
+    //             ret.days = 29;
+    //         }
+    //         return ret;
+    //     }
+    // }
     
     var pluginName = 'Calendar',
 
